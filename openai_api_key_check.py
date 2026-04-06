@@ -1,7 +1,9 @@
 from openai import OpenAI
 import os
+from dotenv import load_dotenv
 
-api_key=os.getenv("OPENROUTER_API_KEY")
+load_dotenv()
+api_key=os.getenv("OPENROUTER_API_KEY").strip()
 
 if not api_key:
     raise ValueError("API key not found in the directory or the key is not valid Or expired!")
