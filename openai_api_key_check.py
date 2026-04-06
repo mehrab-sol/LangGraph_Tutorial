@@ -1,8 +1,14 @@
 from openai import OpenAI
+import os
+
+api_key=os.getenv("OPENROUTER_API_KEY")
+
+if not api_key:
+    raise ValueError("API key not found in the directory or the key is not valid Or expired!")
 
 client = OpenAI(
   base_url="https://openrouter.ai/api/v1",
-  api_key="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",
+  api_key= api_key,
 )
 
 # First API call
