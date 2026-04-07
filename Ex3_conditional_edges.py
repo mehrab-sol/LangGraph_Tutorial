@@ -22,7 +22,7 @@ llm = ChatOpenAI(
     temperature = 0.7,
 )
 
-
+# state
 class State(TypedDict):
     question: str   # user input question
     category: str   # technical | General
