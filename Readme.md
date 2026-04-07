@@ -1,4 +1,4 @@
-# LangGraph Exercises — Beginner to Intermediate
+# LangGraph Exercises
 
 5 standalone scripts that build on each other, from zero LLM to full memory. Each takes under 10 minutes to run and understand.
 
