@@ -9,12 +9,14 @@
 ```bash
 pip install langgraph langchain langchain-openai
 ```
-
-For exercises 2–5, paste your OpenRouter key into the `api_key` field in each file:
+For exercises 2–5, create a .env file and paste your `api_key` like this:
 
 ```python
-api_key="sk-or-v1-YOUR_KEY_HERE"
+OPENROUTER_API_KEY = YOUR_KEY_HERE
+or
+Your_API_key_provider = YOUR_KEY_HERE
 ```
+And change the ` api_key=os.getenv("Your_API_key_provider").strip()`
 
 ---
 
